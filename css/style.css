@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 :root{
-
+    
     --background: #000000;
-    --red: #c20000;
-    --blue: #001f70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83,
-    83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --red: #C20000;
+    --blue: #001F70;
+    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    
     --font: 'Titillium Web', sans-serif;
 }
 
@@ -31,9 +31,10 @@ img{
     /* background-color: aliceblue; */
 }
 .content{
-    width: 80%;
+    width: 100%;
     max-width: 75em;
     height: 100%;
+    /* background-color: aqua; */
     margin: auto;
 }
 .flex-spbt-center{
@@ -50,12 +51,10 @@ img{
 }
 .menu ul{
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
 }
 .menu a{
-    color: #fff;
+    color:#fff;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -63,19 +62,19 @@ img{
 }
 .menu a:hover{
     background-color: var(--red);
-
+    text-shadow: 0 0 20px #fff;
+    text-decoration: underline;
 }
 #menu-bars{
     display: none;
 }
 .banner{
     position: relative;
-    width: 100%;
 }
 .banner-container{
     width: 100%;
     height: 100%;
-    /* background-color: rgb(127, 255, 212, 0.39); */
+    /* background-color: rgba(127, 255, 212, 0.39); */
     position: absolute;
     top: 0;
 }
@@ -95,7 +94,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color:#fff;
 }
 .banner-text h1{
     font-size: 5.62em;
@@ -104,14 +103,14 @@ img{
     font-size: 1.87em;
 }
 .banner-text a{
-    color: #fff;
+    color:#fff;
     font-size: 1.87em;
     text-decoration: none;
     text-transform: uppercase;
     background-color: var(--red);
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
-    margin-top: 1em;
+    padding: 0.5em 1.2em;
+    border-radius: 0.75em;
+    margin-top: 2em;
 }
 .games{
     width: 100%;
@@ -120,72 +119,116 @@ img{
 }
 .games ul{
     width: 100%;
+    /* background-color: red; */
     list-style-type: none;
+}
+.games img{
+    width: 170px;
+  
 }
 .games ul a:hover img{
     transition: 0.5s;
-    transform: scale(1.1);
-
+    transform:scale(1.5);
 }
-.about{
-    width: 100%;
+
+.about {
     height: 31.25em;
     background-color: var(--blue);
+
     position: relative;
-
 }
-.about-angulation{
-    width: 100%;
+
+.about-angulation {
     height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
 
-}
-.angulation{
+.angulation {
+    height: 24.125em;
     width: 100%;
-    height: 24em;
-    background-color: #000;
-    transform: skewY(-3deg);
+    background-color: var(--background);
+
+    transform: skewY(-4deg);   
 }
-.about-position{
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba( 255, 0, 0, 0.397); */
+
+.container-about {
+    color: white;
     position: absolute;
-    top: 0;
+    top: 0
 }
-.about-text{
+
+.content-about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-about {
     width: 50%;
-    color: #fff;
     text-align: justify;
 }
-.about-text h2{
-    font-size: 2.18em;
-    margin-bottom: 0.5em;
 
-}
-.about-text p{
-    font-size: 1.125em;
+.text-about h2 {
     margin-bottom: 1em;
-}
-.about-position img{
-    max-width: 31.87em;
+    font-size: 2.1875em;
 }
 
+.text-about p {
+    font-size: 1.25em;
+}
+
+.content-about img {
+    max-width: 31.875em;
+}
+.linha{
+    border: solid 1px #fff;
+    height: 65%;
+}
+.games-aovivo, .games-embreve{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 1.875em;/*30px*/
+    justify-content: space-between;
+}
+.partida{
+    width: 9.5em;
+    display: flex;
+    align-items: center;
+    /* align-items: center;background-color: red; */
+    justify-content: space-between;
+    margin-left: 1em;
+}
+.time1, .time2{
+    display: flex;
+    align-items: center;
+}
+.partida img{
+    width: 1.8em;
+}
+.time1 img{
+    margin-left: 0.5em;
+}
+.time2 img{
+    margin-right: 0.5em;
+}
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
-    
+
 }
-/* Até 991 */
+/* Até 991px */
 @media screen and (max-width: 61.93em){
-   
-}
-/* Até 767px */
-@media screen and (max-width: 47.93em){
     
+}
+/* até 767px */
+@media screen and (max-width: 47.93em){
+   
 }
 /* Até 576px */
 @media screen and (max-width: 36em){
-    
+
 }
