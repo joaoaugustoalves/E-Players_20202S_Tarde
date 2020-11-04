@@ -3,9 +3,10 @@
 :root{
     
     --background: #000000;
+    --bgnews: #1E1C21;
     --red: #C20000;
     --blue: #001F70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
     
     --font: 'Titillium Web', sans-serif;
 }
@@ -31,7 +32,7 @@ img{
     /* background-color: aliceblue; */
 }
 .content{
-    width: 100%;
+    width: 95%;
     max-width: 75em;
     height: 100%;
     /* background-color: aqua; */
@@ -40,6 +41,11 @@ img{
 .flex-spbt-center{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex-spar-center{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .header-top img{
@@ -72,14 +78,14 @@ img{
     position: relative;
 }
 .banner-container{
-    width: 100%;
+    width: 95%;
     height: 100%;
     /* background-color: rgba(127, 255, 212, 0.39); */
     position: absolute;
     top: 0;
 }
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     /* background-color: rgba(255, 235, 205, 0.384); */
     margin: auto;
@@ -160,7 +166,7 @@ img{
 }
 
 .content-about {
-    width: 80%;
+    width: 95%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -186,13 +192,13 @@ img{
 }
 .linha{
     border: solid 1px #fff;
-    height: 65%;
+    height: 3em;
 }
 .games-aovivo, .games-embreve{
     display: flex;
     color: #fff;
     align-items: center;
-    font-size: 1.875em;/*30px*/
+    font-size: 1.5625em;/*30px*/
     justify-content: space-between;
 }
 .partida{
@@ -215,6 +221,78 @@ img{
 }
 .time2 img{
     margin-right: 0.5em;
+}
+/* Início notícias */
+.bg-news{
+    width: 100%;
+    height: auto;
+    background-color: var(--bgnews);
+}
+.news{
+    width: 70%;
+    height: 90%;
+}
+.news h2, .next-games h2{
+    color: #fff;
+    margin: 1em 0em;
+    font-size: 2.1875em;
+}
+.next-games{
+    width: 25%;
+    height: 90%;
+}
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardnews{
+    width: 15em;
+    height: 22.5em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(97, 97, 97),0px 0px 30px rgb(0, 0, 0);
+}
+.carnews h3{
+    padding: 0.5em 0.6em;
+}
+.cardnews p{
+    padding: 0em 0.6em;
+}
+.next-games-bg{
+    width: 90%;
+    height: auto;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.4em 0;
+}
+.next-games-match{
+    width: 100%;
+    height: 6.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+}
+.teams{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.next-games-match div{
+    display: flex;
+    align-items: center;
+}
+.next-games-match img{
+    max-width: 2.5em;
+}
+.next-games-match > p{
+    margin-top: 1em;
 }
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
